@@ -1,40 +1,38 @@
-# 站点基础设置
-title: 我的个人博客
-subtitle: 记录学习 · 分享生活 · 持续成长
-name: 你的名字
-description: 专注技术分享、日常随笔、学习笔记
-url: "https://你的用户名.github.io"
+title: Cheng Zhao
+subtitle: Research Scientist | Tibet Meteorological Bureau
+name: Cheng Zhao
+description: Atmospheric science, wildfire-climate interactions, black carbon, AI weather forecasting
+url: "https://chengzhao7.github.io"
 baseurl: ""
-locale: zh-CN
-
-# 远程主题固定配置
+locale: en-US
 remote_theme: mmistakes/minimal-mistakes
 
-# 侧边栏头像
 author:
-  avatar: "/assets/images/avatar.jpg"  # 后面教你换头像
-  bio: 热爱编程、喜欢记录、终身学习者
-  location: 中国
-  email: 你的邮箱@xxx.com
+  avatar: "/assets/images/avatar.jpg"
+  bio: "Forecaster & Atmospheric Science Researcher | Third Pole Climate | Wildfire Aerosol | ML Forecasting"
+  location: "Lhasa, Xizang, China"
+  email: "cheng.zhao2023@outlook.com"
+  links:
+    - label: Email
+      icon: fas fa-envelope
+      url: "mailto:cheng.zhao2023@outlook.com"
 
-# 导航菜单
 defaults:
   - scope:
       path: ""
     values:
       layout: single
-      author_profile: true   # 开启侧边栏个人信息
+      author_profile: true
       read_time: true
-      comments: false
       share: true
       related_posts: true
 
-# 顶部导航栏
 header_pages:
   - index.md
   - about.md
+  - publications.md
+  - research.md
 
-# 插件功能
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -42,9 +40,6 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-# 分页
 paginate: 10
 paginate_path: /page:num/
-
-# 搜索功能开启
 search: true
